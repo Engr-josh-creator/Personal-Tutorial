@@ -1,0 +1,128 @@
+body {
+  background-color: rgba(200, 150, 30, 0.3);
+  /* text-transform: capitalize; */
+  text-align: justify;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  /* font-weight: 800; */
+}
+
+h1 {
+  /* font-weight: 600; */
+}
+h3 {
+  color: red;
+  /* background-color: seagreen; */
+  font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.baby {
+  display: inline-block;
+  /* float: right; */
+}
+
+.container {
+  color: white;
+  margin: 10px;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  height: 140px;
+  justify-content: center;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.container-item {
+  background-color: blue;
+  margin: 10px;
+  width: 10px;
+  text-align: center;
+}
+
+.grid-container {
+  background-color: white;
+  margin: 10px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 150px;
+  /* the auto is dividing our element accross our grid. */
+  grid-template-rows: auto auto auto;
+  /* grid-row-gap: 100px; */
+
+  /* or we can use the "grid-gap", where we can specify both the grid-column-gap & grid-row-gap: and this specify the distance between our column and row in the grid. */
+  /* justify-content: start;
+  justify-content: space-around;
+  align-content: end; */
+}
+
+.grid-item {
+  width: 30px;
+  margin: 15px;
+  text-align: center;
+}
+
+.submit {
+  padding: 10px 15px;
+  background-color: rgb(89, 150, 255);
+
+  /* this transform is collecting both the X(first) and Y(second) axis. */
+  transform: translate(30px, 20px);
+
+  transition: all 3s ease-in-out;
+
+  /* used to rotate the element */
+  /* transform: rotate(-45deg); */
+
+  /* scale works in a similar way like padding */
+  /* transform: scale(1.5); */
+
+  /* to create an oblique shape, not parallel or perpendicular to its base */
+  /* transform: skewX(45deg); */
+}
+
+/* we use pseudo selectors to change the state of the button, and use the transition property to make it go smooth. */
+
+.submit:hover {
+  color: white;
+  background-color: red;
+  padding: 20px 30px;
+}
+h2 {
+  color: blue;
+}
+
+#about-me {
+  /* animation-name: red-to-black;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: -2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse; */
+
+  -webkit-animation: red-to-black 4s linear 0s 2 normal;
+  -moz-animation: red-to-black 4s linear 0s 2 normal;
+  -ms-animation: red-to-black 4s linear 0s 2 normal;
+  -o-animation: red-to-black 4s linear 0s 2 normal;
+}
+
+@keyframes red-to-black {
+  0% {
+    background: red;
+    transform: translate(0px, 0px);
+  }
+  50% {
+    background: yellow;
+    transform: translate(10px 10px);
+  }
+  100% {
+    background: black;
+    transform: translate(20px 20px);
+  }
+}

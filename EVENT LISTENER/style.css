@@ -1,0 +1,20 @@
+button {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}

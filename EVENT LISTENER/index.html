@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>2 Ways NOT to Add Event Listeners</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- BOOOOOOO Don't do this! -->
+    <!-- <button onmouseover="alert('YOU CLICKED ME')">Click Me!</button> -->
+    <!-- OR THIS! -->
+    <!-- <button onclick="alert('YOU CLICKED ME TOO!')">Click Me TOO!</button>
+
+    <button id="clicker">CLICKER</button> -->
+
+    <!-- <form action=""> -->
+    <!-- OR THIS!!!! -->
+    <!-- <input
+        onclick="console.log('CLICKED THE INPUT')"
+        type="range"
+        min="10"
+        max="50"
+      />
+    </form>   -->
+    <!-- When using inline add event listener, it needs to come with a prefix "on" -->
+    <!-- they follow this pattern, onEVENTNAME="Do something" -->
+    <h1>Pick a color!</h1>
+    <section id="boxes"></section>
+    <br /><br />
+    <input id="username" placeholder="username" type="text" | />
+
+    <h3>Shopping list</h3>
+    <input type="text" placeholder="enter a food" id="additem" />
+    <ul id="items"></ul>
+    <script src="app.js"></script>
+  </body>
+</html>

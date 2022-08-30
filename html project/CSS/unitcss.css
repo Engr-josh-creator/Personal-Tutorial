@@ -1,0 +1,90 @@
+/* ABSOLUTE value */
+/* font-size, width, height, pixels */
+h1 {
+  color: green;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+}
+
+/* RELATIVE VALUE.
+percent values */
+.outer {
+  width: 200px;
+  height: 200px;
+  background-color: chartreuse;
+}
+/* here it mean give me 50% of the height and width of the outer one. i.e is relative to the box. so percentages depends on the parent element */
+.inner {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+}
+
+/* em - RELATIVE depends on parent
+1em = 16px default  browser style
+1em = base value*/
+
+.relative {
+  font-size: 2rem;
+}
+
+.absolute {
+  font-size: 64px;
+}
+
+div {
+  font-size: 10px;
+  /* because i change my  base value(parent container) of my font size to be 10px, then my 2em will be 20px, and that is what make my em smaller, cos the em of the relative is reading 20px*/
+}
+
+/* rem - RELATIVE depends on root
+1rem = 16px default  browser style*/
+
+/* the root of the element is html and by default is 16px except we change it  */
+/* html { 
+  font-size: 32px;
+} */
+
+/* vh - height - percent of the screen
+vw - width - percent of the screen */
+
+.banner {
+  width: 50vw;
+  height: 50vh;
+  /* here it shows 50% percent of the height and width of the screen. and it is usually use for bannners */
+  background-color: red;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  /* here it shows 50% percent of the height and width of the screen. and it is usually use for bannners */
+  background-color: blue;
+}
+
+/* default browser stles and google devTools. but whatever we will put here,  will overwrite the default browser style */
+h4 {
+  color: red;
+  font-size: 60px;
+}
+
+/* calc()
+perform math operation +-*
+mix and match values */
+
+* {
+  margin: 0;
+}
+.navbar {
+  background-color: darkblue;
+  height: 100px;
+  font-size: 3rem;
+  color: white;
+}
+/* the calc was used to make the navbar and heading to be of 100 percent screen. this is very usedful to set banner in our web page */
+.heading {
+  background-color: red;
+  min-height: calc(100vh - 100px);
+}

@@ -1,0 +1,118 @@
+* {
+  margin: 0px 5px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#size {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  color: red;
+}
+
+.container {
+  height: 100vh;
+}
+
+.header {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.header_logo {
+  font-size: 4vw;
+}
+.header_menu {
+  display: flex;
+  font-size: 2.5vw;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.main {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.main__image {
+  background-image: url("./Images/Portrait.png");
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  border: 2px solid red;
+}
+.main__text {
+  width: 50%;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__text-1 {
+  font-size: 10vw;
+}
+.main__text-2, .main__text-3, .main__text-4 {
+  font-size: 5vw;
+}
+
+.footer {
+  height: 10%;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+.footer [class^=footer__] img {
+  width: 5.3vw;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    justify-content: center;
+  }
+  .header_logo {
+    font-size: 40px;
+  }
+  .header_menu {
+    display: none;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__image {
+    height: 200px;
+    width: 200px;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+    background-size: 100%;
+    background-position: center;
+  }
+  .main__text {
+    width: 100%;
+  }
+  .main__text-1 {
+    display: none;
+  }
+  .main__text-2, .main__text-3, .main__text-4 {
+    font-size: 30px;
+  }
+  .footer {
+    justify-content: center;
+    margin: 0px;
+  }
+  .footer [class^=footer__] {
+    width: 45px;
+    height: 45px;
+  }
+}/*# sourceMappingURL=style2.css.map */

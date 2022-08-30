@@ -1,0 +1,59 @@
+#title {
+  color: green;
+  background-color: black;
+}
+
+#subheading {
+  color: blueviolet;
+  background-color: coral;
+}
+#paragraph1 {
+  color: deeppink;
+}
+#paragraph2 {
+  color: blue;
+}
+
+.green {
+  color: blue;
+}
+.red {
+  color: crimson;
+}
+
+#title1 {
+  color: gold;
+}
+
+.case {
+  text-transform: uppercase;
+}
+.case1 {
+  text-transform: uppercase;
+}
+div {
+  color: blue;
+}
+span {
+  color: red;
+  text-transform: uppercase;
+}
+.inheritance {
+  color: hotpink;
+  border: 3px solid red;
+}
+body {
+  font-family: monospace;
+  line-height: 3em;
+  color: darkorange;
+}
+h5 {
+  color: blue;
+}
+
+.yellow {
+  color: blue;
+}
+p {
+  color: goldenrod;
+}

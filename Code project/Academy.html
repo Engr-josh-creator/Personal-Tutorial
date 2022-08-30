@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="academy.css" />
+  </head>
+  <body>
+    <h1>hello, welcome to this website</h1>
+
+    <p>hey, i want to upload a video on my website</p>
+    <!-- <video
+      src="video/Joshua video.mp4"
+      poster="thumbnail.jpg"
+      controls
+      loop
+      width="300"
+    >
+      My video
+    </video> -->
+    <iframe
+      width="500"
+      height="315"
+      src="https://www.youtube.com/embed/1fGD6C3qcI4?start=3"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim nobis,
+      ex dignissimos, perspiciatis blanditiis fugiat atque asperiores non
+      repellendus vel delectus quaerat laborum expedita itaque provident
+      mollitia cumque nostrum laudantium. Asperiores tenetur voluptatem delectus
+      vitae atque pariatur officia nisi, veritatis quia eligendi mollitia
+      possimus blanditiis sunt recusandae magnam laborum.
+    </p>
+    <ul>
+      <li><a href="#" class="link">Apple</a></li>
+      <li>Orange</li>
+      <li>Pineapple</li>
+      <li>Mango</li>
+    </ul>
+
+    <ol type="i">
+      <li>Apple</li>
+      <li>Orange</li>
+      <li>Pineapple</li>
+      <li>Mango</li>
+    </ol>
+
+    <dl>
+      <dt>Apple</dt>
+      <dd>- this are red apple, and red appple are nice</dd>
+
+      <dt>Mango</dt>
+      <dd>- this is sweet fruit and is a perrenial crop</dd>
+    </dl>
+
+    <table border="1" class="baby">
+      <thead>
+        <caption>
+          <h3>Data of baby-names</h3>
+        </caption>
+        <tr>
+          <th>Name</th>
+          <th>Rank</th>
+          <th>gender</th>
+          <th>year</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Josh</td>
+          <td>1</td>
+          <td>Male</td>
+          <td>2001</td>
+        </tr>
+
+        <tr>
+          <td>paul</td>
+          <td>2</td>
+          <td>male</td>
+          <td>1999</td>
+        </tr>
+
+        <tr>
+          <td>Faith</td>
+          <td>3</td>
+          <td>Female</td>
+          <td>1998</td>
+        </tr>
+
+        <tr>
+          <td>Winner</td>
+          <td>4</td>
+          <td>Female</td>
+          <td>2004</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+      exercitationem officia <div> natus odio aliquid. Nemo soluta</div> quae
+      repellat possimus, quas error illum provident eius recusandae aliquid,
+      voluptatem, quis unde iusto.
+    </p>
+    <br />
+
+    <br />
+    <input id="button_1" type="radio" name="option" /><label for="button_1"
+      >Text for button 1</label
+    >
+    <input id="button_2" type="radio" name="option" /><label for="button_2"
+      >Text for button 2</label
+    >
+    <br />
+    <h3>fill in your details</h3> 
+    <form action="" method="post">
+      <label for="fname">firstname:</label>
+      <input type="text" name="firstname" id="fname" required />
+      <br />
+      <br />
+      middlename: <input type="text" id="Mname" name="middlename" />
+      <br /><br />
+      lastname: <input type="text" id="lname" name="lastname" /> <br /><br />
+      password: <input type="password" name="password" min="8" /> <br /><br />
+      birthday: <input type="date" name="birthday" id="birthday" /> <br />
+      Gender: <br />
+      Male <input type="radio" name="gender" id="Male" value="male" /><br />
+      Female<input type="radio" name="gender" id="Female" value="female" />
+      <br />
+      Skills: <br /> 
+      <input type="Checkbox" name="programming" id="coding" /> programming
+      <br />
+      <input type="checkbox" name="Graphic-design" id="Graphic-design" />
+      Graphic-design
+      <br />
+      <input type="Checkbox" name="skill" id="content-writting" /> Content-
+      writing <br />
+      <input type="checkbox" name="skill" id="UI/UX" /> UI/UX <br />
+      cars:
+      <select name="cars" id="cars" multiple>
+        <!-- we can use the multiple to select more than one in our select name -->
+        <br />
+        <option value="venza">venza</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+      </select> 
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <br>
+
+<div class="container">
+  <!-- the order is base on, how i want the item to arrange in the container. -->
+  <div class="container-item" style="order: 5;
+  /* flex-grow: 1; 
+  flex-basis: 100px;
+  flex-shrink: */
+
+  /* the flex is another way to write the flex property. flex: grow, shrink, basis; */
+  flex: 2 5 200px; 
+  align-self: flex-start;">
+
+  
+  B</div>
+  <div class="container-item" style="order: 2;
+  flex-grow: 1;
+  flex-basis: 100px;
+  /* flex-shrink: */
+  align-self: center;">
+  C</div>
+  <div class="container-item" style="order: 4;
+  flex-grow: 1;
+  flex-basis: 100px;
+  flex-shrink: 3;
+  align-self: center;">
+  A</div>
+  <div class="container-item" style="order: 1;
+  /* flex-grow: 1;
+  flex-basis: 100px;
+  flex-shrink: 1 */
+
+  flex: 1 1 100px;
+ /* the align self is used if we want to align individuals items, and the align self will over-ride the align align-items. */
+  align-self: flex-start;">
+  D</div>
+  <div class="container-item" style="order: 3;
+  flex-grow: 3;
+  flex-basis: 100px;
+  /* flex-shrink: 4; */
+  align-self: flex-end;">
+  E</div> 
+   
+</div>
+
+<!-- <div class="grid-container">
+  <div class="grid-item" style="background: chartreuse; 
+  /* grid-column: 1 / span 3; */
+
+  /* here the span is telling us how many lines it needs to take. span 3 is saying, takes 1  more lines. */
+
+  /* grid-row: 2 / span 4 */
+  /* grid-area: 1 / 1 / span 3 / span 3. this is used incase of grid-column and grid-row*/
+  
+   ">1</div>
+  <div class="grid-item" style="background: goldenrod;
+  ">2</div>
+  <div class="grid-item" style="background: coral;">3</div>
+  <div class="grid-item" style="background: crimson;">4</div>
+  <div class="grid-item" style="background: blueviolet;">5</div>
+  <div class="grid-item" style="background: yellow;">6</div>
+
+</div> -->
+<br>
+<br>
+<form action="" method="post">
+      <label for="fname">firstname:</label>
+      <input type="text" name="firstname" id="fname" required />
+      <br />
+     <br>
+      middlename: <input type="text" id="Mname" name="middlename"/> <br> <br>
+      <input type="button" value="submit" class="submit">
+
+      <h2 id="about-me">about me</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum fugiat mollitia magnam earum dicta nemo distinctio, dignissimos quae, velit error eligendi, necessitatibus cumque blanditiis nostrum nobis voluptates minus consequuntur?</p>
+  </body>
+  
+</html>

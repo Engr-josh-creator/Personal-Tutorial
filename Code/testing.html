@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>hello world</p>
+    <script>
+      for (i = 1; i <= 10; i++) {
+        console.log("hello world:", i);
+      }
+
+      const nestedLoop = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+        [13, 14, 15, 16],
+      ];
+      // for (j = 0; j < nestedLoop.length; j++) {
+      //   console.log(nestedLoop[j]);
+
+      //   let row = nestedLoop[j];
+      //   sum = 0;
+      //   for (let k = 0; k < row.length; k++) {
+      //     sum += 0;
+      //     console.log(row[k]);
+      //   }
+      //   console.log(`${row} summed to ${sum}`);
+      // }
+      totalScore = 0;
+      for (let num of nestedLoop) {
+        // console.log(num);
+        for (let x of num) {
+          totalScore += x;
+        }
+        console.log(totalScore);
+      }
+      console.log(`${totalScore} is the totalscore`);
+
+      var arr = [
+        [1, 2],
+        [3, 4],
+        [5, 6],
+      ];
+      // var arr = [
+      //   [1, 2],
+      //   [3, 4],
+      //   [5, 6],
+      // ];
+      // for (var i = 0; i < arr.length; i++) {
+      //   for (var j = 0; j < arr[i].length; j++) {
+      //     console.log(arr[i][j]);
+      //   }
+      // }
+      for (i = 0; i < arr.length; i++) {
+        // console.log(arr[i]);
+        let nested = arr[i];
+        for (j = 0; j < nested.length; j++) {
+          console.log(nested[j]);
+        }
+      }
+
+      const alphabet = ["a", "b", "c"];
+      while (alphabet.length > 0) {
+        const elem = alphabet.shift(); // remove first element
+        console.log(elem);
+      }
+
+      console.log(Math.floor(Math.random() * (1000 - 100) + 100)); //it means guess from 100 to 1000.
+
+      var myFriends = ["Agatha", "Agnes", "Jermaine", "Jack"];
+      var randomFriend = Math.floor(Math.random() * myFriends.length);
+      console.log(myFriends[randomFriend]);
+
+      // let guessedWord = prompt("what word, am i thinking now");
+
+      // while (guessedWord !== "helloworld") {
+      //   guessedWord = prompt("that's worng. try again"); //as long as the guessword is not helloworld. we have to try again
+      // }
+      // alert("congratulations! that's is correct");
+
+      let firstNum = parseFloat(prompt("Enter first number"));
+      let operator = prompt("Enter the operator from the list below(+,-,*,/)");
+      let secondNum = parseFloat(prompt("Enter second number"));
+
+      if (operator === "+") {
+        answer = firstNum + secondNum;
+      } else if (operator === "-") {
+        answer = firstNum - secondNum;
+      } else if (operator === "/") {
+        answer = firstNum / secondNum;
+      } else if (operator === "*") {
+        answer = firstNum * secondNum;
+      } else {
+        alert(`This is a wrong alert`);
+      }
+      alert(`answer: ${answer}`);
+
+      // let firstNum = prompt("Enter first number");
+      // let operator = prompt("Enter the operator from the list below(+_-_*_/)");
+      // let secondNum = prompt("Enter second number");
+      // let result = `${firstnum} ${operator} ${secondNum}`;
+      // alert(`Result = ${result}`);
+
+      const detailsOfCandidate = {
+        name: "joshua",
+        height: 6.1,
+        state: "Edo state",
+        city: "Benin city",
+        zipCode: 300311,
+      };
+
+      for (details in detailsOfCandidate) {
+        console.log(details);
+        console.log(detailsOfCandidate[details]);
+      }
+      const digit = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      for (num of digit) {
+        if (num % 2 !== 0) {
+          console.log(`${num} is not an even number`);
+        } else {
+          console.log(`${num} is an even number`);
+        }
+      }
+
+      number = [10, 23, 34, 41, 50];
+      for (k of number) {
+        console.log(k);
+      }
+    </script>
+  </body>
+</html>

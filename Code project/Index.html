@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="GROUP 234" />
+    <title>Simple responsove webpage</title>
+    <link rel="stylesheet" href="Project2 (SHI).Css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="Header">
+      <input type="checkbox" id="check" />
+      <img src="../Capstone project 1/logo.svg" alt="fylo image" id="logo" />
+      <div id="navigation">
+        <ul>
+          <label id="icon" class="checkbtn">
+            <i class="fa fa-bars"></i>
+          </label>
+        </ul>
+        <a class="nav" href="#">Home</a>
+        <a class="nav" href="#">About us</a>
+        <a class="nav" href="#">Contact</a>
+        <a class="nav" href="#">Sign In</a>
+      </div>
+    </div>
+
+    <div id="main">
+      <br />
+
+      <form action="" method="post">
+        <h2>Fill in your details in the form provided below</h2>
+        <label for="fullname">fullname: </label>
+        <input type="text" name="fullname" id="fname" required value="Joshua" />
+        <br />
+        <br />
+        <br />
+
+        <label for="user-name">username: </label>
+        <input type="text" name="fullname" id="user-name" required />
+        <br />
+        <br />
+        <br />
+
+        <label for="mail">email: </label>
+        <i class="fa fa-envelope-o"></i>
+        <input
+          type="text"
+          name="fullname"
+          id="mail"
+          placeholder="example@mail.com"
+          required
+        />
+        <br />
+        <br />
+        <br />
+
+        <label for="phone mumber">phone number: </label>
+        <input type="tel" name="phone number" id="Phone number" required />
+        <br />
+        <br />
+        <br />
+
+        <label for="password">password: </label>
+        <i class="fa fa-key"></i>
+        <input type="password" name="password" id="password" min="8" required />
+        <i id="hide1" class="fa fa-eye"></i>
+        <i id="hide2" class="fa fa-eye-slash"></i>
+        <br />
+        <br />
+        <br />
+
+        <label for="password">confirm password: </label>
+        <i class="fa fa-key"></i>
+        <input type="password" name="password" id="password" min="8" required />
+        <i id="hide1" class="fa fa-eye"></i>
+        <i id="hide2" class="fa fa-eye-slash"></i>
+
+        <br />
+        <br />
+        <br />
+
+        <label for="Gender">Gender: </label><br />
+
+        Male:<input type="radio" name="gender" id="Male" value="male" /><br />
+        Female<input type="radio" name="gender" id="Female" value="female" />
+        <br /><br />
+
+        <input type="submit" class="submit" />
+      </form>
+    </div>
+  </body>
+</html>
