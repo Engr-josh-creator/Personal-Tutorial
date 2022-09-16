@@ -62,7 +62,7 @@ const itemUl = document.querySelector("#items");
 addItemInput.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     if (!this.value) return; //if no value in our "enter", then dont return anything
-    //add item to the ul
+    //add what was entered to the ul
     console.log(this.value);
     const newItemText = this.value; //this is referencing to the addItemInput
     const newtext = document.createElement("li");
