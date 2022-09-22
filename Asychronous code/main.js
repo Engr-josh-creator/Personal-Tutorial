@@ -45,23 +45,74 @@ const btn = document.querySelector("button");
 //   }, 5000);
 // }, 1000);
 
-const moveX = (element, amount, delay, callback) => {
-  const bodyBoundary = document.body.clientWidth;
-  const elRight = element.getBoundingClientRect().right;
-  const currLeft = element.getBoundingClientRect().left;
+// const moveX = (element, amount, delay, callback) => {
+//   const bodyBoundary = document.body.clientWidth;
+//   const elRight = element.getBoundingClientRect().right;
+//   const currLeft = element.getBoundingClientRect().left;
 
-  if (elRight + amount > bodyBoundary) {
-    console.log("DONE - CAN'T GO THAT FAR");
-  } else {
+//   if (elRight + amount > bodyBoundary) {
+//     console.log("DONE - CAN'T GO THAT FAR");
+//   } else {
+//     setTimeout(() => {
+//       element.style.transform = `translate(${currLeft + amount}px)`;
+//       if (callback) callback();
+//     }, delay);
+//   }
+// };
+
+// moveX(btn, 100, 1000, () => {
+//   moveX(btn, 100, 1000, () => {
+//     moveX(btn, 800, 1000);
+//   });
+// });
+
+const moveX = (element, amount, delay) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      element.style.transform = `translate(${currLeft + amount}px)`;
-      if (callback) callback();
+      const bodyBoundary = document.body.clientWidth;
+      const elRight = element.getBoundingClientRect().right;
+      const currLeft = element.getBoundingClientRect().left;
+      if (elRight + amount > bodyBoundary) {
+        reject({ bodyBoundary, elRight, amount });
+      } else {
+        element.style.transform = `translateX(${currLeft + amount}px)`;
+        resolve();
+      }
     }, delay);
-  }
+  });
 };
 
-moveX(btn, 100, 1000, () => {
-  moveX(btn, 100, 1000, () => {
-    moveX(btn, 800, 1000);
+// moveX(btn, 300, 1000) //return this promise first, when resolve
+//   .then(() => {
+//     return moveX(btn, 300, 1000); //then return this, when resolve
+//   })
+//   .then(() => {
+//     return moveX(btn, 300, 1000); //then return this, when resolve
+//   })
+//   .then(() => {
+//     return moveX(btn, 300, 1000); //then return this, when resolve
+//   })
+//   .then(() => {
+//     return moveX(btn, 300, 1000); //then return this, when resolve
+//   })
+//   .then(() => {
+//     console.log("done both"); //then do this
+//   })
+//   .catch(() => {
+//     console.log("out of space, cannot move");
+//   });
+
+//we can use implicit functions
+
+moveX(btn, 300, 1000) //return this promise first, when resolve
+  .then(() => moveX(btn, 300, 1000)) //then return this, when resolve
+  .then(() => moveX(btn, 300, 1000)) //then return this, when resolve
+  .then(() => moveX(btn, 300, 1000)) //then return this, when resolve
+  .then(() => moveX(btn, 300, 1000)) //then return this, when resolve
+  .then(
+    () => console.log("done both") //then do this
+  )
+  .catch(({ bodyBoundary, elRight, amount }) => {
+    console.log(`Cannot Move! Body is ${bodyBoundary}px wide`);
+    console.log(`Element is at ${elRight}px, ${amount}px is too large!`);
   });
-});

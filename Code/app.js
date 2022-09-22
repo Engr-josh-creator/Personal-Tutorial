@@ -81,7 +81,7 @@ if (minAge >= 6 || minAge <= 18) {
 }
 
 let day = 9;
-//switch statment means that we are talking ove value and checking it against multiple potential values.
+//switch statment means that we are talking one value and checking it against multiple potential values. and it will take a variable which for us is 'day' here
 switch (day) {
   case 1:
     console.log("Monday");
