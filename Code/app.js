@@ -44,7 +44,7 @@ let passWord = "helloworld";
 if (passWord.length >= 8) {
   // let no space be found. if space === "not found" - then print valid password.
   if (passWord.indexOf(" ") === -1) {
-    console.log("valid password!");
+    console.log("valid password!"); // if we cannot find space, console.log(valid password)
   } else {
     console.log("password should not contain space");
   }
@@ -57,7 +57,7 @@ let Name = "onwuemene joshua";
 // !== -1. is to test if it contains space. we are trying to say, let it  contain space. i.e let space be found in our names.
 
 if (Name.length >= 9 && Name.indexOf(" ") !== -1) {
-  console.log("correct name!");
+  console.log("correct name!"); //if space is found
 } else {
   console.log("pls, check your name again");
 }
@@ -81,7 +81,7 @@ if (minAge >= 6 || minAge <= 18) {
 }
 
 let day = 9;
-//switch statment means that we are talking one value and checking it against multiple potential values. and it will take a variable which for us is 'day' here
+//switch statment means that we are taking one value and checking it against multiple potential values. and it will take a variable for us, which is 'day' in our example here.
 switch (day) {
   case 1:
     console.log("Monday");
