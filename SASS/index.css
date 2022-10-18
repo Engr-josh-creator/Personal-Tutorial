@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* SASS VARIABLES */
+/* MAPS, and it can be called using key value pair, i.e using MAP GET */
+/* used to compute values and return values p */
+/* this is a shortcut used for calling out an item that one use repeatedly*/
+/* mixin is also used to defined theme (light and dark theme), the 100% is basically to invert the color */
+body {
+  background: #272727;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+  width: 40%;
+  margin: 0 auto;
+  /* the content will be passed when the mixin is called */
+}
+.main .main__paragraph1, .main .main__paragraph2 {
+  font-weight: 700;
+}
+.main .main__paragraph1:hover, .main .main__paragraph2:hover {
+  color: pink;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+.main .main__paragraph2:hover {
+  color: #ff652f;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=index.css.map */

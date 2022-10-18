@@ -1,0 +1,13 @@
+/* SASS VARIABLES */
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+
+/* MAPS, and it can be called using key value pair, i.e using MAP GET */
+$font-weight: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+$mobile: 800px;
