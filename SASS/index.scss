@@ -18,6 +18,8 @@
 
 /* mixin is also used to defined theme (light and dark theme), the 100% is basically to invert the color */
 
+/* mixin is used to defined style */
+
 @mixin theme($light-theme: true) {
   @if $light-theme {
     background-color: lighten($primary-color, 100%);

@@ -489,6 +489,7 @@ const any2Authors = books.some((n) => n.authors.length === 2); //this is an impl
 const prices = [12, 200, 35.5, 90, 9000, 12000, 30000];
 
 const ascSort = prices.slice().sort((a, b) => a - b); //we made a copy of the original array before we sort.
+console.log(ascSort); //[12, 35.5, 90, 200, 9000, 12000, 30000]
 const desSort = prices.slice().sort((a, b) => b - a); //same here also. because if we dont. the desSort will change the copy of sort
 
 const goodBook4 = books.slice().sort((a, b) => a.rating - b.rating);

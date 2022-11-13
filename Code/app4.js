@@ -224,12 +224,14 @@ function sayHi() {
   console.log(this);
 }
 
+//in a method "this" refers to the object, the method lives in.
+
 const myName = {
   first: "Joshua",
   last: "Onwuemene",
   nickName: "SirJosh",
   fullName() {
-    const { first, last, nickName } = this; //We are destructuring the element in the curly braces. This is referencing the object.
+    const { first, last, nickName } = this; //We are destructuring the element in the curly braces. "This" is referencing the object.
     return `${first} ${last} AKA ${nickName}`; //The value of 'THIS' is set to the object. i.e the 'myName' object(the current object). The value of this is referencing to the object it lives in.
   },
   printBio() {
